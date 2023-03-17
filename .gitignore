@@ -21,3 +21,8 @@
 ## Mac OS X metadata files:
 *.DS_Store
 
+# Custom
+sig*
+*Submitted*
+*temp*
+.DS_Store

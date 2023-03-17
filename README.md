@@ -99,6 +99,24 @@ docker run --rm --user $(id -u):$(id -g) -i -w "/doc" -v "$PWD":/doc thomasweise
 
 In either case, this should result in the creation of ``{your-cv}.pdf``
 
+### Troubleshooting
+
+Missing `sty` package file?
+
+1. Update your tex package manager
+
+   ```bash
+   tlmgr update --self
+   ```
+
+2. `tlmgr install <package>`
+
+Cutting off a mostly-blank second page on the cover letter:
+
+```console
+pdftk coverletter.pdf cat 1 output output_file.pdf
+```
+
 
 ## Credit
 

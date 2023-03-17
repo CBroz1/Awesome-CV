@@ -1,0 +1,52 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+  % Awesome CV LaTeX Template for Cover Letter
+  %
+  % This template has been downloaded from:
+  % https://github.com/posquit0/Awesome-CV
+  %
+  % Authors:
+  % Claud D. Park <posquit0.bj@gmail.com>
+  % Lars Richter <mail@ayeks.de>
+  %
+  % Template license:
+  % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+  %
+
+
+% CONFIGS ------------------------------------------------------------------------------
+  \documentclass[11pt, letterpaper]{awesome-cv} % 'letterpaper' or 'a4paper'
+  \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm} % page marg
+  \include{config/colors.tex}
+  \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} % set social delim as pipe
+  \input{config/personal-info.tex}
+
+%	LETTER INFO - All required ---------------------------------------------------------
+  \recipient % The company being applied to
+    {Lokovant, Inc.}
+    {1230 Avenue of the Americas 16th Floor\\New York, NY 10020}
+  % The date on the letter, default is the date of compilation
+  \letterdate{\today}
+  % The title of the letter
+  \lettertitle{Job Application for Data Science Manager}
+  % How the letter is opened
+  \letteropening{\\Hello Hiring Team,}
+  % How the letter is closed
+  \letterclosing{Sincerely,}
+  % Any enclosures with the letter
+  \letterenclosure[Attached]{Résumé}
+% DOC BODY -----------------------------------------------------------------------------
+\begin{document}
+\makecvheader[C] % Print the header with above info, optional alignment (L,R,C)
+\makecvfooter {}{Chris Brozdowski~~~·~~~Cover Letter}{} % 3 arg(left, center, right)
+\linebreak
+\makelettertitle % Print the title with above letter information
+%	LETTER CONTENT
+\begin{cvletter}
+\input{cover/about-me.tex}
+\input{cover/why-you.tex}
+\input{cover/why-me.tex}
+\end{cvletter}
+\makeletterclosing % Print the signature and enclosures
+% Now randomly selects across images/sigX.png where X is 1,2,3 to print signature image
+\end{document}
