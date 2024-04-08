@@ -34,7 +34,6 @@
 
 **Awesome CV** is LaTeX template for a **CV(Curriculum Vitae)**, **Résumé** or **Cover Letter** inspired by [Fancy CV](https://www.sharelatex.com/templates/cv-or-resume/fancy-cv). It is easy to customize your own template, especially since it is really written by a clean, semantic markup.
 
-
 ## Donate
 
 Please help keep this project alive! Donations are welcome and will go towards further development of this project.
@@ -65,14 +64,12 @@ You can see [PDF](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/e
 |:---:|:---:|
 | [![Cover Letter(Traditional)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter-0.png)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter.pdf)  | [![Cover Letter(Awesome)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter-1.png)](https://raw.githubusercontent.com/posquit0/Awesome-CV/master/examples/coverletter.pdf) |
 
-
 ## Quick Start
 
 * [**Edit Résumé on OverLeaf.com**](https://www.overleaf.com/latex/templates/awesome-cv/tvmzpvdjfqxp)
 * [**Edit Cover Letter on OverLeaf.com**](https://www.overleaf.com/latex/templates/awesome-cv-cover-letter/pfzzjspkthbk)
 
-**_Note:_ Above services do not guarantee up-to-date source code of Awesome CV**
-
+***Note:* Above services do not guarantee up-to-date source code of Awesome CV**
 
 ## How to Use
 
@@ -109,6 +106,9 @@ Missing `sty` package file?
    tlmgr update --self
    ```
 
+   `tlmgr` may report premission issues. If so, run `chmod 777` on the `tlpkg`
+   directory it mentions.
+
 2. `tlmgr install <package>`
 
 Cutting off a mostly-blank second page on the cover letter:
@@ -116,7 +116,6 @@ Cutting off a mostly-blank second page on the cover letter:
 ```console
 pdftk coverletter.pdf cat 1 output output_file.pdf
 ```
-
 
 ## Credit
 
@@ -128,7 +127,6 @@ pdftk coverletter.pdf cat 1 output output_file.pdf
 
 [**Source Sans Pro**](https://github.com/adobe-fonts/source-sans-pro) is a set of OpenType fonts that have been designed to work well in user interface (UI) environments.
 
-
 ## Contact
 
 You are free to take my `.tex` file and modify it to create your own resume. Please don't use my resume for anything else without my permission, though!
@@ -137,11 +135,9 @@ If you have any questions, feel free to join me at [`#posquit0` on Freenode](irc
 
 Good luck!
 
-
 ## Maintainers
-- [posquit0](https://github.com/posquit0)
-- [OJFord](https://github.com/OJFord)
-
+* [posquit0](https://github.com/posquit0)
+* [OJFord](https://github.com/OJFord)
 
 ## See Also
 

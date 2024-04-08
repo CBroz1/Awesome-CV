@@ -21,8 +21,8 @@
 %-------------------------------------------------------------------------------
 %                Identification
 %-------------------------------------------------------------------------------
-\ProvidesClass{awesome-cv}[2017/02/05 v1.6.1 Awesome Curriculum Vitae Class]
 \NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{awesome-cv}[2017/02/05 v1.6.1 Awesome Curriculum Vitae Class]
 
 
 %-------------------------------------------------------------------------------
@@ -407,7 +407,7 @@
 \newcommand{\acvHeaderIconSep}{\space}
 \newcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 \newcommand{\acvHeaderAfterSocialSkip}{4mm} % was 6
-\newcommand{\acvHeaderAfterQuoteSkip}{1mm} % was 5
+\newcommand{\acvHeaderAfterQuoteSkip}{3mm} % was 5
 
 % Others
 \newcommand{\acvSectionTopSkip}{1mm} % was 3

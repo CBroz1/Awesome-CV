@@ -1,6 +1,7 @@
 
 for f in $(ls -f $1*.tex); do
-    xelatex -output-directory=_output $f >/dev/null
+    # xelatex -output-directory=_output $f >/dev/null
+    lualatex -output-directory=_output $f >/dev/null
     # echo $f
 done
 
