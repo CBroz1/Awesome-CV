@@ -13,7 +13,6 @@
   % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
   %
 % CONFIGS ------------------------------------------------------------------------------
-  % NOTE: on laptop, use `lualatex`
   \documentclass[11pt, letterpaper]{awesome-cv} % 'letterpaper' or 'a4paper'
   \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm} % page marg
   \include{config/colors.tex}
@@ -23,15 +22,16 @@
 \begin{document}
   \makecvheader[C] % Print the header with above info, optional alignment (L,R,C)
   \makecvfooter {\today}{Chris Brozdowski~~~·~~~Curriculum Vitae}{\thepage} %3arg(l,c,r)
-  % CV/RESUME CONTENT
-    \input{cv/profile.tex}
-    \input{cv/education.tex}
-    \input{cv/experience.tex}
-    \input{cv/skills.tex}
-    % \input{cv/honors.tex}
-    % \input{cv/teaching.tex}
-    \input{cv/publications.tex}
-    % \input{cv/writing.tex}
-    % \input{cv/committees.tex}
-    % \input{cv/extracurricular.tex}
+  \input{cv/profile.tex}
+  \input{cv/skills.tex}
+  \input{cv/experience.tex}
+  \input{cv/education.tex}
+  % \input{cv/publications.tex}
+  \input{cv/references.tex}
+  \input{cv/publications-select.tex}
+  % \input{cv/teaching.tex}
+  % \input{cv/honors.tex}
+  % \input{cv/committees.tex}
+  % \input{cv/writing.tex}
+  % \input{cv/extracurricular.tex}
 \end{document}

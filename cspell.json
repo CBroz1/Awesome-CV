@@ -15,17 +15,30 @@
         "src/archive"
     ],
     "words": [
-        "conda",
-        "linenums",
-        "repr",
-        "numpy",
-        "sess",
-        "cond",
         "aggr",
         "Aggr",
+        "ANCOVA",
         "cajal",
         "Cajal",
+        "cond",
+        "conda",
+        "delim",
+        "Dimitri",
+        "Dincer",
+        "Docusign",
+        "Emmorey",
         "hubel",
-        "Hubel"
+        "Hubel",
+        "Kabilar",
+        "linenums",
+        "neuroinfomatics",
+        "Neuromatch",
+        "numpy",
+        "pytest",
+        "repr",
+        "sess",
+        "Storrs",
+        "UCSF",
+        "Yatsenko"
     ]
 }

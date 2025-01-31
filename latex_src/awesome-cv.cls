@@ -21,8 +21,8 @@
 %-------------------------------------------------------------------------------
 %                Identification
 %-------------------------------------------------------------------------------
-\NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{awesome-cv}[2017/02/05 v1.6.1 Awesome Curriculum Vitae Class]
+\NeedsTeXFormat{LaTeX2e}
 
 
 %-------------------------------------------------------------------------------
@@ -222,7 +222,7 @@
 \newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
 
 % Personal commands
-\pgfmathsetseed{\uniformdeviate 10000000} 
+\pgfmathsetseed{\uniformdeviate 10000000}
 \newcommand{\InitVariables}{\pgfmathsetmacro{\myint}{int(random(1,3))}}
 
 %-------------------------------------------------------------------------------
@@ -406,12 +406,12 @@
 \newcommand{\acvHeaderAfterAddressSkip}{-.5mm}
 \newcommand{\acvHeaderIconSep}{\space}
 \newcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-\newcommand{\acvHeaderAfterSocialSkip}{4mm} % was 6
-\newcommand{\acvHeaderAfterQuoteSkip}{3mm} % was 5
+\newcommand{\acvHeaderAfterSocialSkip}{5mm} % was 6
+\newcommand{\acvHeaderAfterQuoteSkip}{5mm} % was 5
 
 % Others
 \newcommand{\acvSectionTopSkip}{1mm} % was 3
-\newcommand{\acvSectionContentTopSkip}{2.5mm}
+\newcommand{\acvSectionContentTopSkip}{1.5mm} % was 2.5
 
 
 %-------------------------------------------------------------------------------
@@ -618,7 +618,7 @@
   \vspace{\acvSectionTopSkip}
   \sectionstyle{#1}
   \phantomsection
-  \color{sectiondivider}\vhrulefill{0.9pt}
+  \color{sectiondivider}\vhrulefill{0.7pt} % was 0.9
 }
 
 % Define a subsection for CV
@@ -643,7 +643,7 @@
 % Define a paragraph for CV
 \newenvironment{cvparagraphlist}{%
   \vspace{\acvSectionContentTopSkip}
-  \vspace{-2mm}
+  \vspace{0mm} % was -2mm
   \leftskip=1em
   \paragraphstyletight
 }{%
@@ -661,7 +661,7 @@
 % Define an entry of cv information
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
 \newcommand*{\cventry}[5]{%
-  \vspace{-2.0mm}
+  \vspace{-2.0mm} % was -2.0mm
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
@@ -740,7 +740,7 @@
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
-  \vspace{-4.0mm}
+  \vspace{-4.0mm} % was -4.0mm
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
     \setlength{\parskip}{0pt}
@@ -748,7 +748,7 @@
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{-4.0mm}
+  \vspace{0.0mm} % was -4.0mm
 }
 
 
@@ -795,10 +795,10 @@
 % Usage: \makeletterclosing
 \newcommand*{\makeletterclosing}{%
   \par
-  \vspace{3.4mm}
+  \vspace{3.0mm} % was 3.4
   \lettertextstyle{\@letterclosing} \\
   %% I ADDED signature
-  \InitVariables % initializes myint which is rand 1-3 
+  \InitVariables % initializes myint which is rand 1-3
   \linebreak
   \begin{tikzpicture}[remember picture]
     % Adds randomized signature image

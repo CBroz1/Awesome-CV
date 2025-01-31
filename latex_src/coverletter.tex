@@ -23,14 +23,14 @@
 
 %	LETTER INFO - All required ---------------------------------------------------------
   \recipient % The company being applied to
-    {Lokovant, Inc.}
-    {1230 Avenue of the Americas 16th Floor\\New York, NY 10020}
+    {UCSF}
+    {400 Parnassus Ave\\San Francisco, CA 94143, }
   % The date on the letter, default is the date of compilation
   \letterdate{\today}
   % The title of the letter
-  \lettertitle{Job Application for Data Science Manager}
+  \lettertitle{Job Application for Computational and Data Science Research 3 position}
   % How the letter is opened
-  \letteropening{\\Hello Hiring Team,}
+  \letteropening{\\Dear Hiring Team,}
   % How the letter is closed
   \letterclosing{Sincerely,}
   % Any enclosures with the letter
@@ -43,10 +43,20 @@
 \makelettertitle % Print the title with above letter information
 %	LETTER CONTENT
 \begin{cvletter}
-\input{cover/about-me.tex}
-\input{cover/why-you.tex}
-\input{cover/why-me.tex}
+  \lettersection{About Me}
+  I am excited to apply for the Computational and Data Science Research 3 position at the University of California San Francisco and eager to join the Frank Laboratory to work on their Spyglass pipeline. As a highly skilled data scientist with a deep understanding of neuroscience, Python, git, and DataJoint, I believe I would be a valuable addition to the team.
+  \lettersection{Why UCSF?}
+  I am particularly drawn to the Frank Laboratory and UCSF due to their reputation for cutting-edge research and innovation. The Frank Lab has a long-standing history of developing pioneering methods for studying neural circuits and their contributions to behavior. The lab's focus on computational and data-driven approaches to neuroscience research aligns perfectly with my own passion for leveraging technologies to support research.
+  \lettersection{Why Me?}
+  I have extensive experience in data analysis, visualization, pipeline design, and research software integration. As a former DataJoint employee, I have expertise in the foundational technologies that support the Spyglass pipeline, making me an ideal candidate for this role. I have contributed to both the DataJoint Python API and various complimentary DataJoint products. I have a deep understanding of DataJoint's capabilities and limitations, and I am confident that I can leverage this knowledge to support and optimize ongoing work.\par
+  Furthermore, I have a strong track record of communicating complex concepts, including principles of pipeline design and software engineering, to multidisciplinary scientific teams. I have successfully led research projects involving large datasets and complex analyses. I have also published several papers in peer-reviewed journals, showcasing my deep understanding of the scientific process.\par
+  I am excited about the opportunity to join the Frank Laboratory at the University of California San Francisco and contribute to cutting-edge research in neuroscience. Thank you for considering my application.
+% \lettersection{Why Atomwise?}
+% \input{cover/about-me.tex}
+% \input{cover/why-you.tex}
+% \input{cover/why-me.tex}
 \end{cvletter}
 \makeletterclosing % Print the signature and enclosures
 % Now randomly selects across images/sigX.png where X is 1,2,3 to print signature image
 \end{document}
+
